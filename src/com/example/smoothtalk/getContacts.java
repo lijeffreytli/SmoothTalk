@@ -32,6 +32,14 @@ public class getContacts extends ActionBarActivity{
 		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
 		
 	}
+	
+	//Quick fix to the bug we were having. Inception?
+	public void getContacts(View view) {
+		// TODO Auto-generated method stub
+		//Do something
+		Intent intent = new Intent(this, getContacts.class);
+	    startActivity(intent);
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

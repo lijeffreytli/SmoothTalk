@@ -27,10 +27,29 @@
             </intent-filter>
         </activity>
         
-        <activity
-            android:name="com.example.smoothtalk.getContacts"
+       <activity
+            android:name="com.example.smoothtalk.ActionbarHelp"
+            android:label="@string/action_help"
             android:parentActivityName="com.example.smoothtalk.MainActivity" >
         </activity>
+        
+       <activity
+            android:name="com.example.smoothtalk.ActionbarAbout"
+            android:label="@string/action_about"
+            android:parentActivityName="com.example.smoothtalk.MainActivity" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.smoothtalk.getContacts" >
+        </activity>
+        
+        <activity
+            android:name="com.example.smoothtalk.getSettings" >
+        </activity>
+        
+        
         
         
     </application>
