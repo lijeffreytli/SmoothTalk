@@ -3,8 +3,7 @@
     package="com.example.smoothtalk"
     android:versionCode="1"
     android:versionName="1.0" >
-    
-    
+
     <!-- Necessary permissions to access contacts and send messages -->
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -27,38 +26,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-       <activity
+        <activity
             android:name="com.example.smoothtalk.ActionbarHelp"
             android:label="@string/action_help"
             android:parentActivityName="com.example.smoothtalk.MainActivity" >
         </activity>
-        
-       <activity
+        <activity
             android:name="com.example.smoothtalk.ActionbarAbout"
             android:label="@string/action_about"
             android:parentActivityName="com.example.smoothtalk.MainActivity" >
         </activity>
-        
-        
-        
-        <activity
-            android:name="com.example.smoothtalk.GetContacts" >
+        <activity android:name="com.example.smoothtalk.GetContacts" >
         </activity>
-        
-        <activity
-            android:name="com.example.smoothtalk.GetSettings" >
+        <activity android:name="com.example.smoothtalk.GetSettings" >
         </activity>
-        
-        
         <activity
-        	android:name="com.example.smoothtalk.SendToNumber" >
-    	</activity>
-    
-        
-        
-        
-        
+            android:name="com.example.smoothtalk.SendToNumber"
+            android:label="@string/title_activity_send_to_number"
+            android:parentActivityName="com.example.smoothtalk.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.smoothtalk.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

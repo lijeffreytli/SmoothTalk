@@ -35,13 +35,14 @@ public class GetContacts extends ActionBarActivity{
 		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
 	}
 	
+	//This method sends a text message to a specific phone number
 	private void sendSMS(String phoneNumber, String message){
 	       SmsManager sms = SmsManager.getDefault();
 	       sms.sendTextMessage(phoneNumber, null, message, null, null);
 	}
 
 	
-	//Quick fix to the bug we were having. Inception?
+	//Quick fix to the bug we were having. Allows user to return to main menu
 	public void getContacts(View view) {
 		// TODO Auto-generated method stub
 		//Do something
@@ -49,6 +50,7 @@ public class GetContacts extends ActionBarActivity{
 	    startActivity(intent);
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -56,7 +58,7 @@ public class GetContacts extends ActionBarActivity{
 		return true;
 	}
 	
-	
+	//Method obtains phone number from the contact Uri.
 	@Override
 	public void onActivityResult(int reqCode, int resultCode, Intent data) {
 		super.onActivityResult(reqCode, resultCode, data);

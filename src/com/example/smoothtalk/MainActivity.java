@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
-	public final static String PHONE_NUMBER = "com.example.smoothtalk.MESSAGE";
+	public final static String EXTRA_MESSAGE = "com.example.smoothtalk.MESSAGE";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,21 +50,16 @@ public class MainActivity extends ActionBarActivity {
 	    startActivity(intent);
 	}
 	
-	public void sendToNumber(View view){
+	public void sendToNumber(View view) {
 		Intent intent = new Intent(this, SendToNumber.class);
-		EditText phoneNumber = (EditText) findViewById(R.id.entered_number);
-		String number = phoneNumber.getText().toString();
-		intent.putExtra(PHONE_NUMBER, number);
 	    startActivity(intent);
 	}
 	
+	//Creates the menu for the action bar
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
-	        case R.id.action_settings:
-	            openSettings();
-	            return true;
 	        case R.id.action_help:
 	        	openHelp();
 	        	return true;
@@ -78,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
 
 	private void openAbout() {
 		// TODO Auto-generated method stub
-		Intent i = new Intent(MainActivity.this, ActionbarHelp.class);
+		Intent i = new Intent(MainActivity.this, ActionbarAbout.class);
 		startActivity(i);
 	}
 
@@ -86,10 +81,6 @@ public class MainActivity extends ActionBarActivity {
 		// TODO Auto-generated method stub
 		Intent i = new Intent(MainActivity.this, ActionbarHelp.class);
 		startActivity(i);
-	}
-
-	private void openSettings() {
-		// TODO Auto-generated method stub
 	}
 
 	/**

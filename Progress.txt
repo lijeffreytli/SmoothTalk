@@ -1,4 +1,6 @@
 Notes/Changes that need to be made:
 
--In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
--Fix the bug where names are showing up as duplicates in contact list
+1) In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
+2) Fix the bug where names are showing up as duplicates in contact list
+3) Currently, GetContacts.java sets the default message to "Hello." Create multiple text files that categorize pick up lines.
+4) Remove ActionBar functionality.
