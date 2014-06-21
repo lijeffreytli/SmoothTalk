@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
-	public final static String ENTERED_NUMBER = "com.example.smoothtalk.NUMBER";
+	public final static String PHONE_NUMBER = "com.example.smoothtalk.MESSAGE";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,10 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public void sendToNumber(View view){
-		Intent intent = new Intent(this, GetSettings.class);
+		Intent intent = new Intent(this, SendToNumber.class);
+		EditText phoneNumber = (EditText) findViewById(R.id.entered_number);
+		String number = phoneNumber.getText().toString();
+		intent.putExtra(PHONE_NUMBER, number);
 	    startActivity(intent);
 	}
 	
