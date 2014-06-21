@@ -1,5 +1,6 @@
 package com.example.smoothtalk;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -45,6 +46,10 @@ public class SendToNumber extends ActionBarActivity {
                     Toast.makeText(getBaseContext(), 
                         "Please enter both phone number and message.", 
                         Toast.LENGTH_SHORT).show();
+                
+                Intent intent = new Intent(SendToNumber.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);   
+                startActivity(intent);
             }
         });     
 	}
