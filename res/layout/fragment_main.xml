@@ -8,25 +8,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.smoothtalk.MainActivity$PlaceholderFragment" >
 
+    
+    <!-- Test Your Luck Button: Send a random pick-up line to a random person -->
     <Button
-        android:id="@+id/button_contacts"
+        android:id="@+id/button_test_your_luck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_settings"
-        android:layout_alignRight="@+id/button_settings"
-        android:layout_centerVertical="true"
-        android:onClick="getContacts"
-        android:text="@string/contacts" />
+        android:layout_alignLeft="@+id/button_enter_number"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:onClick="getSettings"
+        android:text="@string/test_your_luck" />
 
+    <!-- Settings Button: Change the settings of the app -->
     <Button
         android:id="@+id/button_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button_contacts"
-        android:layout_marginTop="50dp"
+        android:layout_above="@+id/button_test_your_luck"
+        android:layout_alignRight="@+id/button_contacts"
+        android:layout_marginBottom="37dp"
         android:onClick="getSettings"
         android:text="@string/settings" />
+
+    <!-- Contacts Button: Redirects you to user's contacts list -->
+    <Button
+        android:id="@+id/button_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="getContacts"
+        android:text="@string/contacts" />
+
+    <!-- Enter a Number: Input a non-contact number to message -->
+    <Button
+        android:id="@+id/button_enter_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:onClick="getSettings"
+        android:text="@string/enter_number" />
 
 </RelativeLayout>

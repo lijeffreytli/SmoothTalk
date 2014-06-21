@@ -4,6 +4,7 @@
     android:versionCode="1"
     android:versionName="1.0" >
     
+    
     <!-- Necessary permissions to access contacts and send messages -->
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />

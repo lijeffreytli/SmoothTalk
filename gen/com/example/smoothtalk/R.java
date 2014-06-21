@@ -858,40 +858,21 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070010;
+        public static final int abc_search_url_text_holo=0x7f07000f;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
-        /**  black 
-         */
         public static final int black=0x7f070008;
-        /**  green 
- blue 
-         */
         public static final int blue=0x7f07000c;
-        public static final int blue_opaque_facebook=0x7f07000e;
         public static final int cyan=0x7f07000d;
         public static final int dark_grey=0x7f070007;
-        /**  grey 
-         */
         public static final int grey=0x7f070004;
         public static final int light_grey=0x7f070005;
-        /**  pink 
-         */
         public static final int magenta=0x7f07000a;
         public static final int medium_grey=0x7f070006;
-        /**  yellow 
- orange 
-         */
         public static final int orange=0x7f070009;
-        /**  red 
-         */
         public static final int red=0x7f07000b;
-        /**  purple 
-         */
-        public static final int violet=0x7f07000f;
-        /**  white 
-         */
+        public static final int violet=0x7f07000e;
         public static final int white=0x7f070003;
     }
     public static final class dimen {
@@ -1111,7 +1092,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int action_about=0x7f050041;
+        public static final int action_about=0x7f050043;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1120,16 +1101,18 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_help=0x7f050040;
+        public static final int action_help=0x7f050042;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05003f;
+        public static final int action_settings=0x7f050041;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int button_contacts=0x7f05003d;
-        public static final int button_settings=0x7f05003e;
+        public static final int button_contacts=0x7f050040;
+        public static final int button_enter_number=0x7f05003e;
+        public static final int button_settings=0x7f05003f;
+        public static final int button_test_your_luck=0x7f05003d;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
@@ -1284,8 +1267,10 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0010;
         public static final int app_name=0x7f0a000d;
         public static final int contacts=0x7f0a0012;
+        public static final int enter_number=0x7f0a0015;
         public static final int hello_world=0x7f0a000e;
         public static final int settings=0x7f0a0013;
+        public static final int test_your_luck=0x7f0a0014;
     }
     public static final class style {
         /** 

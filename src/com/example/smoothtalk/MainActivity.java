@@ -52,23 +52,23 @@ public class MainActivity extends ActionBarActivity {
 	    startActivity(intent);
 	}
 	
-	@Override
-	public void onActivityResult(int reqCode, int resultCode, Intent data) {
-	super.onActivityResult(reqCode, resultCode, data);
-
-	switch (reqCode) {
-		case (0) :
-			if (resultCode == Activity.RESULT_OK) {
-				Uri contactData = data.getData();
-				Cursor c =  managedQuery(contactData, null, null, null, null);
-				if (c.moveToFirst()) {
-					String name = c.getString(c.getColumnIndexOrThrow(People.NAME));
-					// TODO Whatever you want to do with the selected contact name.
-				}
-			}
-		break;
-		}
-	}
+//	@Override
+//	public void onActivityResult(int reqCode, int resultCode, Intent data) {
+//	super.onActivityResult(reqCode, resultCode, data);
+//
+//	switch (reqCode) {
+//		case (0) :
+//			if (resultCode == Activity.RESULT_OK) {
+//				Uri contactData = data.getData();
+//				Cursor c =  managedQuery(contactData, null, null, null, null);
+//				if (c.moveToFirst()) {
+//					String name = c.getString(c.getColumnIndexOrThrow(People.NAME));
+//					// TODO Whatever you want to do with the selected contact name.
+//				}
+//			}
+//		break;
+//		}
+//	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
