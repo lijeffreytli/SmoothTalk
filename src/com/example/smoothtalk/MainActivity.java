@@ -1,11 +1,7 @@
 package com.example.smoothtalk;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Contacts.People;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -14,9 +10,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
-
+	public final static String ENTERED_NUMBER = "com.example.smoothtalk.NUMBER";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
 	public void getContacts(View view) {
 		// TODO Auto-generated method stub
 		//Do something
-		Intent intent = new Intent(this, getContacts.class);
+		Intent intent = new Intent(this, GetContacts.class);
 	    startActivity(intent);
 	}
 	
@@ -48,27 +46,14 @@ public class MainActivity extends ActionBarActivity {
 	public void getSettings(View view) {
 		// TODO Auto-generated method stub
 		//Do something
-		Intent intent = new Intent(this, getSettings.class);
+		Intent intent = new Intent(this, GetSettings.class);
 	    startActivity(intent);
 	}
 	
-//	@Override
-//	public void onActivityResult(int reqCode, int resultCode, Intent data) {
-//	super.onActivityResult(reqCode, resultCode, data);
-//
-//	switch (reqCode) {
-//		case (0) :
-//			if (resultCode == Activity.RESULT_OK) {
-//				Uri contactData = data.getData();
-//				Cursor c =  managedQuery(contactData, null, null, null, null);
-//				if (c.moveToFirst()) {
-//					String name = c.getString(c.getColumnIndexOrThrow(People.NAME));
-//					// TODO Whatever you want to do with the selected contact name.
-//				}
-//			}
-//		break;
-//		}
-//	}
+	public void sendToNumber(View view){
+		Intent intent = new Intent(this, GetSettings.class);
+	    startActivity(intent);
+	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

@@ -1,0 +1,4 @@
+Notes/Changes that need to be made:
+
+-In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
+-Fix the bug where names are showing up as duplicates in contact list

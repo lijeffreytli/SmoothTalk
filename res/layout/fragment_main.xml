@@ -49,7 +49,7 @@
         android:layout_above="@+id/button_contacts"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="29dp"
-        android:onClick="getSettings"
+        android:onClick="sendToNumber"
         android:text="@string/enter_number" />
 
 </RelativeLayout>
