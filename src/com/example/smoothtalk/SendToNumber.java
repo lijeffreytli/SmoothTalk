@@ -32,19 +32,17 @@ public class SendToNumber extends ActionBarActivity {
 		
 		btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
         txtPhoneNo = (EditText) findViewById(R.id.txtPhoneNo);
-        txtMessage = (EditText) findViewById(R.id.txtMessage);
  
         btnSendSMS.setOnClickListener(new View.OnClickListener() 
         {
             public void onClick(View v) 
             {                
-                String phoneNo = txtPhoneNo.getText().toString();
-                String message = txtMessage.getText().toString();                 
+                String phoneNo = txtPhoneNo.getText().toString();                 
                 if (phoneNo.length()>0)                
                     sendSMS(phoneNo, "Hello");                
                 else
                     Toast.makeText(getBaseContext(), 
-                        "Please enter both phone number and message.", 
+                        "Please enter a phone number.", 
                         Toast.LENGTH_SHORT).show();
                 
                 Intent intent = new Intent(SendToNumber.this, MainActivity.class);

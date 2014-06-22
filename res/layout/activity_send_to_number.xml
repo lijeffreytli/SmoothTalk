@@ -1,37 +1,41 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.smoothtalk.SendToNumber"
-    tools:ignore="MergeRootFrame">
-    <TextView  
-        android:layout_width="fill_parent" 
-        android:layout_height="wrap_content" 
-        android:text="Enter the phone number of recipient"
-        />     
-    <EditText 
-        android:id="@+id/txtPhoneNo"  
-        android:layout_width="fill_parent" 
-        android:layout_height="wrap_content"        
-        />
-    <TextView  
-        android:layout_width="fill_parent" 
-        android:layout_height="wrap_content"         
-        android:text="Message"
-        />     
-    <EditText 
-        android:id="@+id/txtMessage"  
-        android:layout_width="fill_parent" 
-        android:layout_height="150px"
-        android:gravity="top"         
-        />          
-    <Button 
-        android:id="@+id/btnSendSMS"  
-        android:layout_width="fill_parent" 
-        android:layout_height="wrap_content"
-        android:text="Send SMS"
-        />    
+    tools:ignore="MergeRootFrame" >
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtPhoneNo"
+        android:layout_marginTop="47dp"
+        android:text="@string/button_send" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/number_request" />
+
+</RelativeLayout>

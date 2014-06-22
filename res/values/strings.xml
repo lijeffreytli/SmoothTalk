@@ -12,5 +12,6 @@
     <string name="enter_number">Enter a Number</string>
     <string name="title_activity_send_to_number">SendToNumberActivity</string>
     <string name="button_send">Send</string>
+    <string name="number_request">Enter the phone number of recipient</string>
    
 </resources>
