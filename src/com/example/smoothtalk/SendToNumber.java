@@ -46,7 +46,7 @@ public class SendToNumber extends ActionBarActivity {
                         "Please enter a phone number.", 
                         Toast.LENGTH_SHORT).show();
             }
-        });     
+        });  
 	}
 
 	//This method sends a text message to a specific phone number
