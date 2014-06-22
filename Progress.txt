@@ -1,7 +1,22 @@
 Notes/Changes that need to be made:
 
-1) In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
-2) Fix the bug where names are showing up as duplicates in contact list
-3) Currently, GetContacts.java sets the default message to "Hello." Create multiple text files that categorize pick up lines.
-4) Remove ActionBar functionality.
-5) Create Custom Buttons and Icon for the App
+To Do Log of Tasks:
+
+-In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
+-Fix the bug where names are showing up as duplicates in contact list
+-Create Custom Buttons and Icon for the App
+-Create multiple text files that categorize pick up lines.
+-Add a confirmation dialogue box that appears after the user successfully sends the message.
+-Handle all of the cases where the user could input invalid information.
+
+
+Long Term Tasks:
+-Add multiple text files to assets and set up a massive switch statement to deal with all of the categories and subsets
+-Make it pretty
+
+
+Completed Log of Tasks:
+June 22, 2014
+-Currently, GetContacts.java sets the default message to "Hello." 
+-Remove ActionBar functionality. (Commented out res/menu code that would create actionbar menu options)
+

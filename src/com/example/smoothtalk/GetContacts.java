@@ -16,10 +16,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class GetContacts extends Activity {
-	//Stores the indicated contact's phone number
+	/* Stores the indicated contact's phone number */
 	public String contactNumber; 
-	//Stores the indicated contact's name (Currently not used)
+	/* Stores the indicated contact's name (Currently not used) */
 	public String contactName;
+	/* Stores the pick-up line that's sent to the contact */
 	private String message;
 
 	@Override
@@ -31,13 +32,13 @@ public class GetContacts extends Activity {
 		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
 	}
 	
-	//This method sends a text message to a specific phone number
+	/* This method sends a text message to a specific phone number */
 	private void sendSMS(String phoneNumber, String message){
 	       SmsManager sms = SmsManager.getDefault();
 	       sms.sendTextMessage(phoneNumber, null, message, null, null);
 	}
 	
-	//Method obtains phone number from the contact Uri.
+	/* Method obtains phone number from the contact Uri. */
 	@Override
 	public void onActivityResult(int reqCode, int resultCode, Intent data) {
 		super.onActivityResult(reqCode, resultCode, data);
@@ -67,7 +68,7 @@ public class GetContacts extends Activity {
 			}
 		break;
 		}
-		finish();
+		finish(); //After sending the message, return back to MainActivity
 	}
 	
 	/* Read and Parse the text file */
@@ -79,6 +80,7 @@ public class GetContacts extends Activity {
 		try {
 		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
 		    String line;
+		    //Read the first line text file (Number of lines in text file)
 		    String initialNumber = br.readLine();
 		    int maxLineNumber = Integer.parseInt(initialNumber.replaceAll("[\\D]",""));
 		    int randomNumber = rand.nextInt(maxLineNumber+1)+1;

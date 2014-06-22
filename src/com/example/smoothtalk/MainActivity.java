@@ -36,16 +36,11 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public void getContacts(View view) {
-		// TODO Auto-generated method stub
-		//Do something
 		Intent intent = new Intent(this, GetContacts.class);
 	    startActivity(intent);
 	}
 	
-	
 	public void getSettings(View view) {
-		// TODO Auto-generated method stub
-		//Do something
 		Intent intent = new Intent(this, GetSettings.class);
 	    startActivity(intent);
 	}
@@ -55,32 +50,14 @@ public class MainActivity extends ActionBarActivity {
 	    startActivity(intent);
 	}
 	
-	//Creates the menu for the action bar
+	/* Creates the menu for the action bar (Unused Code) */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
-	        case R.id.action_help:
-	        	openHelp();
-	        	return true;
-	        case R.id.action_about:
-	        	openAbout();
-	        	return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
-	}
-
-	private void openAbout() {
-		// TODO Auto-generated method stub
-		Intent i = new Intent(MainActivity.this, ActionbarAbout.class);
-		startActivity(i);
-	}
-
-	private void openHelp() {
-		// TODO Auto-generated method stub
-		Intent i = new Intent(MainActivity.this, ActionbarHelp.class);
-		startActivity(i);
 	}
 
 	/**
