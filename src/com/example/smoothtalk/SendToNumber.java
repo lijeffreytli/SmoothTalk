@@ -38,16 +38,13 @@ public class SendToNumber extends ActionBarActivity {
             public void onClick(View v) 
             {                
                 String phoneNo = txtPhoneNo.getText().toString();                 
-                if (phoneNo.length()>0)                
-                    sendSMS(phoneNo, "Hello");                
-                else
+                if (phoneNo.length()>0) {            
+                    sendSMS(phoneNo, "Hello"); 
+                    finish();
+                } else
                     Toast.makeText(getBaseContext(), 
                         "Please enter a phone number.", 
                         Toast.LENGTH_SHORT).show();
-                
-                Intent intent = new Intent(SendToNumber.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);   
-                startActivity(intent);
             }
         });     
 	}

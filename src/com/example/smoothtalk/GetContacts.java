@@ -33,6 +33,7 @@ public class GetContacts extends ActionBarActivity{
 		
 		Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
 		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
+		finish();
 	}
 	
 	//This method sends a text message to a specific phone number
@@ -41,16 +42,6 @@ public class GetContacts extends ActionBarActivity{
 	       sms.sendTextMessage(phoneNumber, null, message, null, null);
 	}
 
-	
-	//Quick fix to the bug we were having. Allows user to return to main menu
-	public void getContacts(View view) {
-		// TODO Auto-generated method stub
-		//Do something
-		Intent intent = new Intent(this, GetContacts.class);
-	    startActivity(intent);
-	}
-
-	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

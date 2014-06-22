@@ -36,7 +36,9 @@
             android:label="@string/action_about"
             android:parentActivityName="com.example.smoothtalk.MainActivity" >
         </activity>
-        <activity android:name="com.example.smoothtalk.GetContacts" >
+        <activity 
+            android:name="com.example.smoothtalk.GetContacts"
+            android:parentActivityName="com.example.smoothtalk.MainActivity">
         </activity>
         <activity android:name="com.example.smoothtalk.GetSettings" >
         </activity>
