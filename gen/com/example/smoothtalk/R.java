@@ -1107,10 +1107,10 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int btnSendSMS=0x7f05003f;
-        public static final int button_contacts=0x7f050043;
-        public static final int button_enter_number=0x7f050041;
-        public static final int button_settings=0x7f050042;
-        public static final int button_test_your_luck=0x7f050040;
+        public static final int button_contacts=0x7f050042;
+        public static final int button_enter_number=0x7f050043;
+        public static final int button_settings=0x7f050040;
+        public static final int button_test_your_luck=0x7f050041;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
