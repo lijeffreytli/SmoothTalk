@@ -1,5 +1,10 @@
 package com.example.smoothtalk;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,6 +24,7 @@ public class SendToNumber extends ActionBarActivity {
 	Button btnSendSMS;
     EditText txtPhoneNo;
     EditText txtMessage;
+    private String message;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +43,10 @@ public class SendToNumber extends ActionBarActivity {
         {
             public void onClick(View v) 
             {                
-                String phoneNo = txtPhoneNo.getText().toString();                 
+            	message = getPickUpLine();
+            	String phoneNo = txtPhoneNo.getText().toString();      
                 if (phoneNo.length()>0) {            
-                    sendSMS(phoneNo, "Hello"); 
+                    sendSMS(phoneNo, message); 
                     finish();
                 } else
                     Toast.makeText(getBaseContext(), 
@@ -90,6 +97,31 @@ public class SendToNumber extends ActionBarActivity {
 					container, false);
 			return rootView;
 		}
+	}
+	
+	/* Read and Parse the text file */
+	public String getPickUpLine(){
+		//Read text from file
+		Random rand = new Random();
+		String pickupline = "";
+		
+		try {
+		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
+		    String line;
+		    String initialNumber = br.readLine();
+		    int maxLineNumber = Integer.parseInt(initialNumber.replaceAll("[\\D]",""));
+		    int randomNumber = rand.nextInt(maxLineNumber+1)+1;
+		    int count = 0;
+		    
+		    while ((line = br.readLine()) != null && count != randomNumber) {
+		        count++;
+		    }
+	        pickupline = line;
+		}
+		catch (IOException e) {
+		    //You'll need to add proper error handling here
+		}
+		return pickupline;
 	}
 
 }
