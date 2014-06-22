@@ -36,12 +36,6 @@
             android:label="@string/action_about"
             android:parentActivityName="com.example.smoothtalk.MainActivity" >
         </activity>
-        <activity 
-            android:name="com.example.smoothtalk.GetContacts"
-            android:parentActivityName="com.example.smoothtalk.MainActivity">
-        </activity>
-        <activity android:name="com.example.smoothtalk.GetSettings" >
-        </activity>
         <activity
             android:name="com.example.smoothtalk.SendToNumber"
             android:label="@string/title_activity_send_to_number"
@@ -49,6 +43,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.smoothtalk.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.smoothtalk.GetContacts"
+            android:label="@string/title_activity_get_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.smoothtalk.GetSettings"
+            android:label="@string/title_activity_get_settings" >
         </activity>
     </application>
 

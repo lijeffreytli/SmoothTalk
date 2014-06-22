@@ -11,50 +11,30 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
 import android.telephony.gsm.SmsManager;
-import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.MenuItem;
 
-public class GetContacts extends ActionBarActivity{
-	
+public class GetContacts extends Activity {
 	//Stores the indicated contact's phone number
 	public String contactNumber; 
 	//Stores the indicated contact's name (Currently not used)
 	public String contactName;
 	private String message;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		
-		
-
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		setContentView(R.layout.activity_get_contacts);
 		
 		Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
 		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
-		
 	}
 	
 	//This method sends a text message to a specific phone number
 	private void sendSMS(String phoneNumber, String message){
 	       SmsManager sms = SmsManager.getDefault();
 	       sms.sendTextMessage(phoneNumber, null, message, null, null);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 	
 	//Method obtains phone number from the contact Uri.
@@ -84,29 +64,10 @@ public class GetContacts extends ActionBarActivity{
 					contactName = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 				}
 				sendSMS(contactNumber, message);
-				finish(); //return back to MainActivity after the message is sent.
 			}
 		break;
 		}
-	}
-	
-
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
-			return rootView;
-		}
+		finish();
 	}
 	
 	/* Read and Parse the text file */
@@ -132,5 +93,5 @@ public class GetContacts extends ActionBarActivity{
 		    //You'll need to add proper error handling here
 		}
 		return pickupline;
-	}
+	}	
 }

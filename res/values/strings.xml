@@ -13,5 +13,8 @@
     <string name="title_activity_send_to_number">Enter a Number</string>
     <string name="button_send">Send</string>
     <string name="number_request">Enter the phone number of recipient</string>
-   
+    <string name="title_activity_get_contacts">GetContacts</string>
+    <string name="title_activity_get_bitches">GetBitches</string>
+    <string name="title_activity_get_settings">GetSettings</string>
+
 </resources>
