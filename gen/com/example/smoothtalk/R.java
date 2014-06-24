@@ -1089,7 +1089,13 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int button_contacts=0x7f020057;
+        public static final int button_number=0x7f020058;
+        public static final int button_settings=0x7f020059;
+        public static final int button_test_luck=0x7f02005a;
+        public static final int buttons_bg=0x7f02005b;
+        public static final int ic_launcher=0x7f02005c;
+        public static final int temp_bg=0x7f02005d;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1108,9 +1114,9 @@ containing a value of this type.
         public static final int beginning=0x7f050011;
         public static final int btnSendSMS=0x7f05003f;
         public static final int button_contacts=0x7f050042;
-        public static final int button_enter_number=0x7f050043;
-        public static final int button_settings=0x7f050040;
-        public static final int button_test_your_luck=0x7f050041;
+        public static final int button_enter_number=0x7f050041;
+        public static final int button_settings=0x7f050044;
+        public static final int button_test_your_luck=0x7f050043;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
@@ -1127,6 +1133,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
+        public static final int linearLayout1=0x7f050040;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int middle=0x7f050012;
@@ -1306,11 +1313,12 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b008b;
+        public static final int AppBaseTheme=0x7f0b008c;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0b008c;
+        public static final int AppTheme=0x7f0b008d;
+        public static final int ButtonText=0x7f0b008b;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

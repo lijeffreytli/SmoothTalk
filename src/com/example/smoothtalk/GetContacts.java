@@ -10,10 +10,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.telephony.gsm.SmsManager;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.widget.Toast;
 
 public class GetContacts extends Activity {
 	/* Stores the indicated contact's phone number */
@@ -22,14 +22,17 @@ public class GetContacts extends Activity {
 	public String contactName;
 	/* Stores the pick-up line that's sent to the contact */
 	private String message;
+	/* Request code for contracts */
+	private static final int CONTACT_CODE = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_get_contacts);
 		
-		Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-		startActivityForResult(intent, 0); //PICK_CONTACT SET TO 0?
+		Intent intent = new Intent(Intent.ACTION_PICK, Contacts.CONTENT_URI);
+		intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
+		startActivityForResult(intent, CONTACT_CODE);
 	}
 	
 	/* This method sends a text message to a specific phone number */
@@ -44,7 +47,7 @@ public class GetContacts extends Activity {
 		super.onActivityResult(reqCode, resultCode, data);
 
 		switch (reqCode) {
-		case (0) :
+		case (CONTACT_CODE) :
 			if (resultCode == Activity.RESULT_OK) {
 				Uri contactData = data.getData();
 				Cursor c =  managedQuery(contactData, null, null, null, null);
@@ -79,7 +82,7 @@ public class GetContacts extends Activity {
 		
 		try {
 		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
-		    String line;
+		    String line = "";
 		    //Read the first line text file (Number of lines in text file)
 		    String initialNumber = br.readLine();
 		    int maxLineNumber = Integer.parseInt(initialNumber.replaceAll("[\\D]",""));
@@ -92,7 +95,8 @@ public class GetContacts extends Activity {
 	        pickupline = line;
 		}
 		catch (IOException e) {
-		    //You'll need to add proper error handling here
+		    Toast.makeText(getBaseContext(), "Error: Unable to get pickup line", Toast.LENGTH_SHORT).show();
+		    finish();
 		}
 		return pickupline;
 	}	

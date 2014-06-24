@@ -108,7 +108,7 @@ public class SendToNumber extends ActionBarActivity {
 		
 		try {
 		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
-		    String line;
+		    String line = "";
 		    //Read the first line text file (Number of lines in text file)
 		    String initialNumber = br.readLine();
 		    //parse the string to an int via regex
@@ -122,7 +122,8 @@ public class SendToNumber extends ActionBarActivity {
 	        pickupline = line;
 		}
 		catch (IOException e) {
-		    //You'll need to add proper error handling here
+		    Toast.makeText(getBaseContext(), "Error: Unable to get pickup line", Toast.LENGTH_SHORT).show();
+		    finish();
 		}
 		return pickupline;
 	}
