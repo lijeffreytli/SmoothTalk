@@ -2,8 +2,9 @@ Notes/Changes that need to be made:
 
 To Do Log of Tasks:
 
+-GetTestLuck class
+-GetSettings class: need to categorize the pick up lines
 -In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
--Fix the bug where names are showing up as duplicates in contact list
 -Create Custom Buttons and Icon for the App
 -Create multiple text files that categorize pick up lines.
 -Add a confirmation dialogue box that appears after the user successfully sends the message.
@@ -19,4 +20,11 @@ Completed Log of Tasks:
 June 22, 2014
 -Currently, GetContacts.java sets the default message to "Hello." 
 -Remove ActionBar functionality. (Commented out res/menu code that would create actionbar menu options)
+-Fix the bug where names are showing up as duplicates in contact list
 
+July 23, 2014
+-Just created the GetTestLuck class. Class doesn't actually do anything at the moment.
+
+
+Ideas:
+Instead of doing sub-categories, do easier version and just do a couple main broad categories. (Easier for now)

@@ -13,11 +13,11 @@
     <string name="title_activity_send_to_number">Enter a Number</string>
     <string name="button_send">Send</string>
     <string name="number_request">Enter the phone number of recipient</string>
-    
-	<style name="ButtonText">
-		<item name="android:layout_width">fill_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:textColor">#fdfdfd</item>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fdfdfd</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">3dp</item>
         <item name="android:textStyle">normal</item>
@@ -27,9 +27,10 @@
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">2</item>
     </style>
-   
+
     <string name="title_activity_get_contacts">GetContacts</string>
     <string name="title_activity_get_bitches">GetBitches</string>
     <string name="title_activity_get_settings">GetSettings</string>
+    <string name="title_activity_get_test_luck">Test Your Luck</string>
 
 </resources>

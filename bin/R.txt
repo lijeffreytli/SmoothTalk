@@ -351,11 +351,12 @@ int layout activity_actionbar_about 0x7f030018
 int layout activity_actionbar_help 0x7f030019
 int layout activity_get_contacts 0x7f03001a
 int layout activity_get_settings 0x7f03001b
-int layout activity_main 0x7f03001c
-int layout activity_send_to_number 0x7f03001d
-int layout fragment_main 0x7f03001e
-int layout fragment_send_to_number 0x7f03001f
-int layout support_simple_spinner_dropdown_item 0x7f030020
+int layout activity_get_test_luck 0x7f03001c
+int layout activity_main 0x7f03001d
+int layout activity_send_to_number 0x7f03001e
+int layout fragment_main 0x7f03001f
+int layout fragment_send_to_number 0x7f030020
+int layout support_simple_spinner_dropdown_item 0x7f030021
 int menu get_contacts 0x7f0c0000
 int menu main 0x7f0c0001
 int menu main_activity_actions 0x7f0c0002
@@ -387,6 +388,7 @@ int string test_your_luck 0x7f0a0014
 int string title_activity_get_bitches 0x7f0a001a
 int string title_activity_get_contacts 0x7f0a0019
 int string title_activity_get_settings 0x7f0a001b
+int string title_activity_get_test_luck 0x7f0a001c
 int string title_activity_send_to_number 0x7f0a0016
 int style AppBaseTheme 0x7f0b008c
 int style AppTheme 0x7f0b008d

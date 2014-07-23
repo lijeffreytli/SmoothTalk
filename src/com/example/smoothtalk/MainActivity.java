@@ -28,7 +28,6 @@ public class MainActivity extends ActionBarActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu items for use in the action bar
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.main_activity_actions, menu);
@@ -43,6 +42,11 @@ public class MainActivity extends ActionBarActivity {
 	public void getSettings(View view) {
 		Intent intent = new Intent(this, GetSettings.class);
 	    startActivity(intent);
+	}
+	
+	public void getTestLuck(View view) {
+		Intent intent = new Intent(this, GetTestLuck.class);
+		startActivity(intent);
 	}
 	
 	public void sendToNumber(View view) {
