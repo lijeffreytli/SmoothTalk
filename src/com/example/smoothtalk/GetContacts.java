@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -37,8 +38,10 @@ public class GetContacts extends Activity {
 	
 	/* This method sends a text message to a specific phone number */
 	private void sendSMS(String phoneNumber, String message){
-	       SmsManager sms = SmsManager.getDefault();
-	       sms.sendTextMessage(phoneNumber, null, message, null, null);
+		
+		SmsManager sms = SmsManager.getDefault();
+	    sms.sendTextMessage(phoneNumber, null, message, null, null);
+	       
 	}
 	
 	/* Method obtains phone number from the contact Uri. */

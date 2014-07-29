@@ -4,7 +4,6 @@ To Do Log of Tasks:
 
 -GetTestLuck class
 -GetSettings class: need to categorize the pick up lines
-
 -Create Custom Buttons and Icon for the App
 -Create multiple text files that categorize pick up lines.
 -Add a confirmation dialogue box that appears after the user successfully sends the message.
