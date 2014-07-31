@@ -60,13 +60,17 @@ public class GetContacts extends ActionBarActivity {
 					String id =c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
 					String hasPhone =c.getString(c.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER));
 					if (hasPhone.equalsIgnoreCase("1")) {
-						Cursor phones = getContentResolver().query( 
-								ContactsContract.CommonDataKinds.Phone.CONTENT_URI,null, 
-								ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = "+ id, 
-								null, null);
-						phones.moveToFirst();
-						String cNumber = phones.getString(phones.getColumnIndex("data1"));
-						contactNumber = cNumber;
+//						Cursor phones = getContentResolver().query( 
+//								ContactsContract.CommonDataKinds.Phone.CONTENT_URI,null, 
+//								ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = "+ id, 
+//								null, null);
+						Cursor phones = getContentResolver().query(contactData, null, null, null, null);
+						if(phones.moveToFirst()){
+	//						String cNumber = phones.getString(phones.getColumnIndex("data1"));
+							String cNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+							contactNumber = cNumber;
+						}
+						//else?
 					}
 					contactName = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 				}
