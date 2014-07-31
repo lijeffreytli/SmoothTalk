@@ -6,17 +6,17 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Contacts;
 import android.provider.ContactsContract;
+import android.support.v7.app.ActionBarActivity;
 import android.telephony.gsm.SmsManager;
 import android.widget.Toast;
 
-public class GetContacts extends Activity {
+public class GetContacts extends ActionBarActivity {
 	/* Stores the indicated contact's phone number */
 	public String contactNumber; 
 	/* Stores the indicated contact's name (Currently not used) */

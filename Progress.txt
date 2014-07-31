@@ -2,6 +2,7 @@ Notes/Changes that need to be made:
 
 To Do Log of Tasks:
 
+-GetContacts class is broken: Strictmode error causing the app to crash.
 -GetTestLuck class
 -GetSettings class: need to categorize the pick up lines
 -Create Custom Buttons and Icon for the App
