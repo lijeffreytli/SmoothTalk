@@ -2,6 +2,7 @@ Notes/Changes that need to be made:
 
 To Do Log of Tasks:
 
+-For some reason, changing the name Dirty.txt to Cheesy.txt doesn't do anything? still pulls data from Dirty.txt
 -GetContacts class is broken: Strictmode error causing the app to crash.
 -GetTestLuck class
 -GetSettings class: need to categorize the pick up lines
