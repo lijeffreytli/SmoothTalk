@@ -5,14 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
-import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.gsm.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -26,6 +27,8 @@ public class SendToNumber extends ActionBarActivity {
     /* Stores the pick-up line that's sent to the contact */
     private String message;
 	
+    
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -39,19 +42,40 @@ public class SendToNumber extends ActionBarActivity {
 		btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
         txtPhoneNo = (EditText) findViewById(R.id.txtPhoneNo);
  
+        /* Once the user hits the "Send" button */
         btnSendSMS.setOnClickListener(new View.OnClickListener() 
         {
             public void onClick(View v) 
-            {                
-            	message = getPickUpLine();
-            	String phoneNo = txtPhoneNo.getText().toString();      
-                if (phoneNo.length()>0) { //Checks whether the number is not null      
-                    sendSMS(phoneNo, message); 
-                    finish(); //After sending the message, return back to MainActivity
-                } else //Throw an exception if the number is invalid
-                    Toast.makeText(getBaseContext(), 
-                        "Please enter a phone number.", 
-                        Toast.LENGTH_SHORT).show();
+            {   
+            	/* AlertDialog box for user confirmation */
+            	AlertDialog.Builder builder1 = new AlertDialog.Builder(SendToNumber.this);
+                builder1.setMessage("Send to this number?");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Yes",
+                        new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                    	
+                    	message = getPickUpLine();
+                    	String phoneNo = txtPhoneNo.getText().toString(); 
+                    	
+                    	if (phoneNo.length()>0) { //Checks whether the number is not null      
+                        	sendSMS(phoneNo, message); 
+                            finish(); //After sending the message, return back to MainActivity
+                        } else //Throw an exception if the number is invalid
+                            Toast.makeText(getBaseContext(), 
+                                "Please enter a valid phone number.", 
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder1.setNegativeButton("No",
+                        new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+                AlertDialog alert11 = builder1.create();
+                alert11.show();
             }
         });  
 	}
