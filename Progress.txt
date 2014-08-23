@@ -1,9 +1,6 @@
 Notes/Changes that need to be made:
 
 To Do Log of Tasks:
-
--For some reason, changing the name Dirty.txt to Cheesy.txt doesn't do anything? still pulls data from Dirty.txt
--GetContacts class is broken: Strictmode error causing the app to crash.
 -GetTestLuck class
 -GetSettings class: need to categorize the pick up lines
 -Create Custom Buttons and Icon for the App
@@ -30,6 +27,11 @@ July 28th, 2014
 -In getContacts, handle the condition in which there's no phone number present. Throw an error and ask if user wants to try again?
 Note: People without phone numbers will not show up as an option
 
+August 23rd, 2014
+-For some reason, changing the name Dirty.txt to Cheesy.txt doesn't do anything? still pulls data from Dirty.txt
+Note: This was just me being stupid. I didn't change the name in both SendToNumber AND GetContacts.
+-GetContacts class is broken: Strictmode error causing the app to crash.
+-Added Alert Dialog Box for SendToNumber, allows for user confirmation whether they want to send or not.
 
 Ideas:
 Instead of doing sub-categories, do easier version and just do a couple main broad categories. (Easier for now)
