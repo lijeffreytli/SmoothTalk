@@ -13,6 +13,9 @@
     <string name="title_activity_send_to_number">Enter a Number</string>
     <string name="button_send">Send</string>
     <string name="number_request">Enter the phone number of recipient</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+   
 
     <style name="ButtonText">
         <item name="android:layout_width">fill_parent</item>
@@ -32,5 +35,6 @@
     <string name="title_activity_get_bitches">GetBitches</string>
     <string name="title_activity_get_settings">GetSettings</string>
     <string name="title_activity_get_test_luck">Test Your Luck</string>
+    <string name="title_activity_send_to_randoms">SendToRandoms</string>
 
 </resources>

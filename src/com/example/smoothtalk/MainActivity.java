@@ -1,7 +1,6 @@
 package com.example.smoothtalk;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +11,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
-	public final static String EXTRA_MESSAGE = "com.example.smoothtalk.MESSAGE";
-	final Context context = this;
-	Button btnTestLuck;
+	public final static String EXTRA_MESSAGE = "com.example.smoothtalk.MESSAGE";	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		} 
 	}
 
 	@Override
@@ -40,6 +36,11 @@ public class MainActivity extends ActionBarActivity {
 	    return super.onCreateOptionsMenu(menu);
 	}
 	
+	public void getTestLuck(View view) {
+		Intent intent = new Intent(this, GetTestLuck.class);
+	    startActivity(intent);
+	}
+	
 	public void getContacts(View view) {
 		Intent intent = new Intent(this, GetContacts.class);
 	    startActivity(intent);
@@ -48,11 +49,6 @@ public class MainActivity extends ActionBarActivity {
 	public void getSettings(View view) {
 		Intent intent = new Intent(this, GetSettings.class);
 	    startActivity(intent);
-	}
-	
-	public void getTestLuck(View view) {
-		Intent intent = new Intent(this, GetTestLuck.class);
-		startActivity(intent);
 	}
 	
 	public void sendToNumber(View view) {

@@ -53,8 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:background="@drawable/button_test_luck"
-            android:padding="12dp"
             android:onClick="getTestLuck"
+            android:padding="12dp"
             android:text="@string/test_your_luck" />
 		
         <!-- Settings Button: Change the settings of the app -->

@@ -1,9 +1,9 @@
 Notes/Changes that need to be made:
 
 To Do Log of Tasks:
--GetTestLuck class
+-GetTestLuck class: Add functionality to the buttons
 -GetSettings class: need to categorize the pick up lines
--Create Custom Buttons and Icon for the App
+-Create Custom Buttons and Icon for the App (Johnny)
 -Create multiple text files that categorize pick up lines.
 -Add a confirmation dialogue box that appears after the user successfully sends the message.
 -Handle all of the cases where the user could input invalid information.
