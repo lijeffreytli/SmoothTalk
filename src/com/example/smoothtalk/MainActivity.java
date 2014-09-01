@@ -56,6 +56,8 @@ public class MainActivity extends ActionBarActivity {
 	    startActivity(intent);
 	}
 	
+	
+	
 	/* Creates the menu for the action bar (Unused Code) */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

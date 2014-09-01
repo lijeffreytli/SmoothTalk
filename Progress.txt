@@ -33,5 +33,8 @@ Note: This was just me being stupid. I didn't change the name in both SendToNumb
 -GetContacts class is broken: Strictmode error causing the app to crash.
 -Added Alert Dialog Box for SendToNumber, allows for user confirmation whether they want to send or not.
 
+August 30th, 2014
+-
+
 Ideas:
 Instead of doing sub-categories, do easier version and just do a couple main broad categories. (Easier for now)

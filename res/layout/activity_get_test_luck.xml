@@ -24,24 +24,24 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/button_enter_number"
+            android:id="@+id/button_yes"
             style="@style/ButtonText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:background="@drawable/button_number"
-            android:onClick="sendToNumber"
+            android:onClick="sendToRandomCon"
             android:padding="12dp"
             android:text="@string/yes" />
 
         <Button
-            android:id="@+id/button_settings"
+            android:id="@+id/button_no"
             style="@style/ButtonText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:background="@drawable/button_settings"
-            android:onClick="getSettings"
+            android:onClick="returnToMain"
             android:padding="12dp"
             android:text="@string/no" />
     </LinearLayout>

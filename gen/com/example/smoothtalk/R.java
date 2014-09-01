@@ -1114,11 +1114,13 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int btnSendSMS=0x7f050047;
-        public static final int button_contacts=0x7f050048;
-        public static final int button_enter_number=0x7f05003f;
+        public static final int button_contacts=0x7f050049;
+        public static final int button_enter_number=0x7f050048;
         public static final int button_enter_numberpoop=0x7f050044;
-        public static final int button_settings=0x7f050040;
-        public static final int button_test_your_luck=0x7f050049;
+        public static final int button_no=0x7f050040;
+        public static final int button_settings=0x7f05004b;
+        public static final int button_test_your_luck=0x7f05004a;
+        public static final int button_yes=0x7f05003f;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050043;
@@ -1229,9 +1231,10 @@ containing a value of this type.
         public static final int activity_get_test_luck=0x7f03001a;
         public static final int activity_main=0x7f03001b;
         public static final int activity_send_to_number=0x7f03001c;
-        public static final int fragment_main=0x7f03001d;
-        public static final int fragment_send_to_number=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int activity_send_to_random_con=0x7f03001d;
+        public static final int fragment_main=0x7f03001e;
+        public static final int fragment_send_to_number=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int get_contacts=0x7f0c0000;
@@ -1297,6 +1300,7 @@ containing a value of this type.
         public static final int title_activity_get_settings=0x7f0a001d;
         public static final int title_activity_get_test_luck=0x7f0a001e;
         public static final int title_activity_send_to_number=0x7f0a0016;
+        public static final int title_activity_send_to_random_con=0x7f0a0020;
         public static final int title_activity_send_to_randoms=0x7f0a001f;
         public static final int yes=0x7f0a0019;
     }
