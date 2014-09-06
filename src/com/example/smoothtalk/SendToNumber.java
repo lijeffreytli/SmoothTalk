@@ -8,6 +8,7 @@ import java.util.Random;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -18,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SendToNumber extends ActionBarActivity {
@@ -38,6 +40,9 @@ public class SendToNumber extends ActionBarActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		TextView txtFriend = (TextView) findViewById(R.id.sendToFriend);
+		Typeface fontFriend = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+		txtFriend.setTypeface(fontFriend);
 		
 		btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
         txtPhoneNo = (EditText) findViewById(R.id.txtPhoneNo);

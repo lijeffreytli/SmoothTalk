@@ -12,7 +12,7 @@
     <string name="enter_number">Enter a Number</string>
     <string name="title_activity_send_to_number">Enter a Number</string>
     <string name="button_send">Send</string>
-    <string name="number_request">Enter the phone number of recipient</string>
+    <string name="number_request">Send a line to a friend!</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 

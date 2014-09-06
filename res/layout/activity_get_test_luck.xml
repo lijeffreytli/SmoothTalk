@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/temp_bg_3"
     tools:context="${packageName}.${activityClass}" >
 
     <TextView
@@ -10,15 +11,38 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Warning: This feature sends a random pick-up line from a random contact in your Contacts list." />
+        android:textColor="#BFFFFFFF"
+        android:textSize="20sp"
+        android:text="Warning: This feature sends a random pick-up line to a random contact in your Contacts list." />
+
+    <TextView
+        android:id="@+id/textYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAre"
+        android:layout_centerHorizontal="true"
+        android:text="YOU"
+        android:textColor="#BFFFFFFF"
+        android:textSize="75sp" />
+
+    <TextView
+        android:id="@+id/textSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textYou"
+        android:layout_centerHorizontal="true"
+        android:text="SURE?"
+        android:layout_marginBottom="30dp"
+        android:textColor="#BFFFFFFF"
+        android:textSize="75sp" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textSure"
-        android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textSure"
+        android:layout_below="@+id/textSure"
         android:background="@drawable/buttons_bg"
         android:orientation="vertical"
         android:padding="10dp" >
@@ -47,30 +71,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textYou"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textAre"
-        android:layout_centerHorizontal="true"
-        android:text="YOU"
-        android:textSize="75sp" />
-
-    <TextView
-        android:id="@+id/textSure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textYou"
-        android:layout_centerHorizontal="true"
-        android:text="SURE?"
-        android:textSize="75sp" />
-
-    <TextView
         android:id="@+id/textAre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textYou"
         android:layout_below="@+id/textWarning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
         android:text="ARE"
+        android:textColor="#BFFFFFFF"
         android:textSize="75sp" />
 
 </RelativeLayout>
