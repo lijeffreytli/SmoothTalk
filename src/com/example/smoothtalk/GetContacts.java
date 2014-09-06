@@ -88,7 +88,7 @@ public class GetContacts extends ActionBarActivity {
 		String pickupline = "";
 		
 		try {
-		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
+		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Cute.txt")));
 		    String line = "";
 		    //Read the first line text file (Number of lines in text file)
 		    String initialNumber = br.readLine();
