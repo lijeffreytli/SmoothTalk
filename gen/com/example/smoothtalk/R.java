@@ -1095,12 +1095,13 @@ containing a value of this type.
         public static final int button_test_luck=0x7f02005a;
         public static final int buttons_bg=0x7f02005b;
         public static final int fragment_main=0x7f02005c;
-        public static final int ic_launcher=0x7f02005d;
-        public static final int temp_bg=0x7f02005e;
-        public static final int temp_bg_1=0x7f02005f;
-        public static final int temp_bg_2=0x7f020060;
-        public static final int temp_bg_3=0x7f020061;
-        public static final int temp_bg_new=0x7f020062;
+        public static final int heart_icon=0x7f02005d;
+        public static final int ic_launcher=0x7f02005e;
+        public static final int temp_bg=0x7f02005f;
+        public static final int temp_bg_1=0x7f020060;
+        public static final int temp_bg_2=0x7f020061;
+        public static final int temp_bg_3=0x7f020062;
+        public static final int temp_bg_new=0x7f020063;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
