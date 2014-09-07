@@ -44,6 +44,10 @@ public class SendToNumber extends ActionBarActivity {
 		Typeface fontFriend = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
 		txtFriend.setTypeface(fontFriend);
 		
+		TextView txtSend = (TextView) findViewById(R.id.btnSendSMS);
+		Typeface fontSend = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+		txtSend.setTypeface(fontSend);
+		
 		btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
         txtPhoneNo = (EditText) findViewById(R.id.txtPhoneNo);
  
