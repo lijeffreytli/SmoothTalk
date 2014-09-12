@@ -1118,13 +1118,12 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int btnSendSMS=0x7f050047;
-        public static final int button_contacts=0x7f050049;
-        public static final int button_enter_number=0x7f050048;
-        public static final int button_enter_numberpoop=0x7f050044;
+        public static final int btnSendSMS=0x7f050046;
+        public static final int button_contacts=0x7f050048;
+        public static final int button_enter_number=0x7f050047;
         public static final int button_no=0x7f050042;
-        public static final int button_settings=0x7f05004b;
-        public static final int button_test_your_luck=0x7f05004a;
+        public static final int button_settings=0x7f05004a;
+        public static final int button_test_your_luck=0x7f050049;
         public static final int button_yes=0x7f050041;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
@@ -1162,7 +1161,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int sendToFriend=0x7f050045;
+        public static final int sendToFriend=0x7f050044;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1176,7 +1175,7 @@ containing a value of this type.
         public static final int textYou=0x7f05003d;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
-        public static final int txtPhoneNo=0x7f050046;
+        public static final int txtPhoneNo=0x7f050045;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1231,17 +1230,15 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_actionbar_about=0x7f030018;
-        public static final int activity_actionbar_help=0x7f030019;
-        public static final int activity_get_contacts=0x7f03001a;
-        public static final int activity_get_settings=0x7f03001b;
-        public static final int activity_get_test_luck=0x7f03001c;
-        public static final int activity_main=0x7f03001d;
-        public static final int activity_send_to_number=0x7f03001e;
-        public static final int activity_send_to_random_con=0x7f03001f;
-        public static final int fragment_main=0x7f030020;
-        public static final int fragment_send_to_number=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
+        public static final int activity_get_contacts=0x7f030018;
+        public static final int activity_get_settings=0x7f030019;
+        public static final int activity_get_test_luck=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int activity_send_to_number=0x7f03001c;
+        public static final int activity_send_to_random_con=0x7f03001d;
+        public static final int fragment_main=0x7f03001e;
+        public static final int fragment_send_to_number=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int get_contacts=0x7f0c0000;

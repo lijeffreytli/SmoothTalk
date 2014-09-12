@@ -26,15 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SendToNumber"
-            android:label="@string/title_activity_send_to_number"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.smoothtalk.MainActivity" />
-        </activity>
-        <activity
+                <activity
             android:name=".GetContacts"
             android:label="@string/title_activity_get_contacts"
             android:parentActivityName=".MainActivity" >
@@ -54,6 +46,15 @@
             android:label="@string/title_activity_send_to_random_con"
             android:parentActivityName=".MainActivity" >
         </activity>
+        <activity
+            android:name=".SendToNumber"
+            android:label="@string/title_activity_send_to_number"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.smoothtalk.MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>

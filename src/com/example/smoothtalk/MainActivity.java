@@ -26,7 +26,24 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		
+//		TextView txtButtonEnter = (TextView) findViewById(R.id.button_enter_number);
+//		Typeface fontButtonEnter = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//		txtButtonEnter.setTypeface(fontButtonEnter);
+//		
+//		TextView txtButtonContacts = (TextView) findViewById(R.id.button_contacts);
+//		Typeface fontButtonContacts = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//		txtButtonContacts.setTypeface(fontButtonContacts);
+//		
+//		TextView txtButtonTestLuck = (TextView) findViewById(R.id.button_test_your_luck);
+//		Typeface fontButtonTestLuck = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//		txtButtonTestLuck.setTypeface(fontButtonTestLuck);
+//		
+//		TextView txtButtonSettings = (TextView) findViewById(R.id.button_settings);
+//		Typeface fontButtonSettings = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//		txtButtonSettings.setTypeface(fontButtonSettings);
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -84,5 +101,30 @@ public class MainActivity extends ActionBarActivity {
 			return rootView;
 		}
 	}
+	
+//	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+//	       View v = inflater.inflate(R.layout.fragment_main, container, false);
+////	       TextView txt = (TextView) v.findViewById(R.id.Zipcode);
+////	       Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/customfont.ttf");
+////	       txt.setTypeface(font); 
+//	       
+//			TextView txtButtonEnter = (TextView) findViewById(R.id.button_enter_number);
+//			Typeface fontButtonEnter = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//			txtButtonEnter.setTypeface(fontButtonEnter);
+//			
+//			TextView txtButtonContacts = (TextView) findViewById(R.id.button_contacts);
+//			Typeface fontButtonContacts = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//			txtButtonContacts.setTypeface(fontButtonContacts);
+//			
+//			TextView txtButtonTestLuck = (TextView) findViewById(R.id.button_test_your_luck);
+//			Typeface fontButtonTestLuck = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//			txtButtonTestLuck.setTypeface(fontButtonTestLuck);
+//			
+//			TextView txtButtonSettings = (TextView) findViewById(R.id.button_settings);
+//			Typeface fontButtonSettings = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+//			txtButtonSettings.setTypeface(fontButtonSettings);
+//	       
+//	       return v;
+//	}
 
 }
