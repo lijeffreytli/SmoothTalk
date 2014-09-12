@@ -16,10 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/buttons_bg"
         android:orientation="vertical"
-        android:padding="10dp" >
+        android:padding="13dp" >
 
         <Button
             android:id="@+id/button_enter_number"
@@ -29,8 +29,9 @@
             android:layout_margin="4dp"
             android:background="@drawable/button_number"
             android:onClick="sendToNumber"
-            android:padding="12dp"
-            android:text="@string/enter_number" />
+            android:padding="15dp"
+            android:text="@string/enter_number" 
+            android:typeface="sans" />
 
         <Button
             android:id="@+id/button_contacts"
@@ -40,8 +41,9 @@
             android:layout_margin="4dp"
             android:background="@drawable/button_contacts"
             android:onClick="getContacts"
-            android:padding="12dp"
-            android:text="@string/contacts" />
+            android:padding="15dp"
+            android:text="@string/contacts" 
+            android:typeface="sans" />
 
         <Button
             android:id="@+id/button_test_your_luck"
@@ -51,8 +53,9 @@
             android:layout_margin="4dp"
             android:background="@drawable/button_test_luck"
             android:onClick="getTestLuck"
-            android:padding="12dp"
-            android:text="@string/test_your_luck" />
+            android:padding="15dp"
+            android:text="@string/test_your_luck" 
+            android:typeface="sans" />
 
         <Button
             android:id="@+id/button_settings"
@@ -62,8 +65,9 @@
             android:layout_margin="4dp"
             android:background="@drawable/button_settings"
             android:onClick="getSettings"
-            android:padding="12dp"
-            android:text="@string/settings" />
+            android:padding="15dp"
+            android:text="@string/settings"
+            android:typeface="sans" />
     </LinearLayout>
 
 </RelativeLayout>
