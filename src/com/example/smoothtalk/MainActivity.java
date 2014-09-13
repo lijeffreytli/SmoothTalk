@@ -98,6 +98,24 @@ public class MainActivity extends ActionBarActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
+			
+			/* Set the fonts for the main page buttons: Yay it works! */
+			TextView txtButtonEnter = (TextView) rootView.findViewById(R.id.button_enter_number);
+			Typeface fontButtonEnter = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
+			txtButtonEnter.setTypeface(fontButtonEnter);
+			
+			TextView txtButtonContacts = (TextView) rootView.findViewById(R.id.button_contacts);
+			Typeface fontButtonContacts = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
+			txtButtonContacts.setTypeface(fontButtonContacts);
+			
+			TextView txtButtonTestLuck = (TextView) rootView.findViewById(R.id.button_test_your_luck);
+			Typeface fontButtonTestLuck = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
+			txtButtonTestLuck.setTypeface(fontButtonTestLuck);
+			
+			TextView txtButtonSettings = (TextView) rootView.findViewById(R.id.button_settings);
+			Typeface fontButtonSettings = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
+			txtButtonSettings.setTypeface(fontButtonSettings);
+			
 			return rootView;
 		}
 	}
