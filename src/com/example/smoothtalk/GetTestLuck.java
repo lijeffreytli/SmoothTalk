@@ -28,6 +28,9 @@ public class GetTestLuck extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_get_test_luck);
 		
+		// Remove the name of the app from action bar
+		getActionBar().setDisplayShowTitleEnabled(false);
+		
 		TextView txtAre = (TextView) findViewById(R.id.textAre);
 		Typeface fontAre = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
 		txtAre.setTypeface(fontAre);

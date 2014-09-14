@@ -26,6 +26,9 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		
+		// Remove the name of the app from action bar
+		getActionBar().setDisplayShowTitleEnabled(false);
+		
 //		TextView txtButtonEnter = (TextView) findViewById(R.id.button_enter_number);
 //		Typeface fontButtonEnter = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
 //		txtButtonEnter.setTypeface(fontButtonEnter);

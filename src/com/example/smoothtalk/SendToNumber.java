@@ -40,6 +40,10 @@ public class SendToNumber extends ActionBarActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		// Remove the title of the app from action bar
+		getActionBar().setDisplayShowTitleEnabled(false);
+		
 		TextView txtFriend = (TextView) findViewById(R.id.sendToFriend);
 		Typeface fontFriend = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
 		txtFriend.setTypeface(fontFriend);
