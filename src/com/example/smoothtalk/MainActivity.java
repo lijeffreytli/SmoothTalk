@@ -112,9 +112,9 @@ public class MainActivity extends ActionBarActivity {
 			Typeface fontButtonTestLuck = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
 			txtButtonTestLuck.setTypeface(fontButtonTestLuck);
 			
-			TextView txtButtonSettings = (TextView) rootView.findViewById(R.id.button_settings);
-			Typeface fontButtonSettings = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
-			txtButtonSettings.setTypeface(fontButtonSettings);
+//			TextView txtButtonSettings = (TextView) rootView.findViewById(R.id.button_settings);
+//			Typeface fontButtonSettings = Typeface.createFromAsset(getActivity().getAssets(), "AliquamREG.ttf");
+//			txtButtonSettings.setTypeface(fontButtonSettings);
 			
 			return rootView;
 		}

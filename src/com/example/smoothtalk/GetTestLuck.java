@@ -44,6 +44,14 @@ public class GetTestLuck extends ActionBarActivity {
 		Typeface fontWarning = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
 		txtWarning.setTypeface(fontWarning);
 		
+		TextView txtButtonYes = (TextView) findViewById(R.id.button_yes);
+		Typeface fontButtonYes = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+		txtButtonYes.setTypeface(fontButtonYes);
+		
+		TextView txtButtonNo = (TextView) findViewById(R.id.button_no);
+		Typeface fontButtonNo = Typeface.createFromAsset(getAssets(), "AliquamREG.ttf");
+		txtButtonNo.setTypeface(fontButtonNo);
+		
 		Button btnYes = (Button)findViewById(R.id.button_yes);
 		
         /* Once the user hits the "Send" button */
@@ -128,7 +136,7 @@ public class GetTestLuck extends ActionBarActivity {
 		String pickupline = "";
 		
 		try {
-		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Dirty.txt")));
+		    BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("Cute.txt")));
 		    String line = "";
 		    //Read the first line text file (Number of lines in text file)
 		    String initialNumber = br.readLine();
