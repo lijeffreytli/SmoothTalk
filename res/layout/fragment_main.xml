@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="53dp"
         android:background="@drawable/buttons_bg"
         android:orientation="vertical"
         android:padding="13dp" >
@@ -56,6 +56,17 @@
             android:padding="15dp"
             android:text="@string/test_your_luck"
             android:typeface="sans" />
+
+        <Button
+            android:id="@+id/button_settings"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_settings"
+            android:onClick="getSettings"
+            android:padding="12dp"
+            android:text="@string/settings" />
     </LinearLayout>
 
 </RelativeLayout>
