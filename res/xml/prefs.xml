@@ -26,6 +26,7 @@
      android:title="Sounds" />
  
   <ListPreference
+     android:defaultValue="Funny, Flattering, Cheesy"
      android:entries="@array/listOptions"
      android:entryValues="@array/listValues"
      android:key="category_list_pref"
